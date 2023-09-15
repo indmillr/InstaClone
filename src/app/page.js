@@ -7,9 +7,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </head>
       {/* HEADER */}
-
+      here i am
       {/* FEED */}
-
       {/* MODAL */}
     </div>
   );
