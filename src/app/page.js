@@ -1,14 +1,13 @@
-import Image from "next/image";
+// COMPONENTS
+import Header from "./components/Header";
 
 export default function Home() {
   return (
     <div>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       {/* HEADER */}
-      here i am
+      <Header />
       {/* FEED */}
+
       {/* MODAL */}
     </div>
   );
