@@ -2,11 +2,12 @@
 import Image from "next/image";
 
 // ICONS
-import { SearchIcon } from "@heroicons/react/outline";
+import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline";
+import { HomeIcon } from "@heroicons/react/solid";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-between max-w-6xl">
+    <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
       {/* LEFT */}
       <div className="h-24 w-24 relative hidden lg:inline-grid cursor-pointer">
         <Image
@@ -36,7 +37,15 @@ export default function Header() {
       </div>
 
       {/* RIGHT */}
-      <h1>Right Side</h1>
+      <div className="flex space-x-4 items-center">
+        <HomeIcon className="hidden md:inline-flex h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" />
+        <PlusCircleIcon className="h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" />
+        <img
+          src="https://www.outkick.com/wp-content/uploads/ian-miller-1536x1536.jpg"
+          alt="user-image"
+          className="h-10 rounded-full cursor-pointer"
+        />
+      </div>
     </div>
   );
 }
