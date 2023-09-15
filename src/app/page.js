@@ -1,12 +1,12 @@
 // COMPONENTS
+import Feed from "./components/Feed";
 import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div>
-      {/* HEADER */}
+    <div className="bg-gray-50 min-h-screen">
       <Header />
-      {/* FEED */}
+      <Feed />
 
       {/* MODAL */}
     </div>
